@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+namespace SRP;
 
-namespace SRP
+public class Print
 {
-    public class Print
+
+    public void PrintTransactions(List<string> transactions)
     {
-
-
-
+        foreach (var transaction in transactions)
+        {
+            Console.WriteLine(transaction);
+        }
     }
-
-
-
 }
+
+
+
