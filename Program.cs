@@ -7,4 +7,7 @@ account.Withdraw(50000);
 Console.WriteLine($"Transaction for accounty : {account.AccountNumber} is : ");
 Print print = new Print();
 
+print.PrintTransactions(account.Transactions);
 
+
+Console.ReadKey();
