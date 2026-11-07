@@ -26,11 +26,29 @@ namespace SRP
             Balance += amount;
 
 
-            Transactions.Add($"Deposited ${amount}.New Blance :${Balance}");
+            Transactions.Add($"Deposited ${amount}.New Balance :${Balance}");
 
         }
 
+        public void Withdraw(int amount)
+        {
+            Balance -= amount;
+            Transactions.Add($"Withdraw ${amount}. New Balance ${Balance}");
 
+        }
+        public int GetBalance()
+        {
+            return Balance;
+        }
+
+
+        public void Print()
+        {
+            foreach (var transaction in Transactions)
+            {
+                Console.WriteLine(transaction);
+            }
+        }
     }
 
 }
