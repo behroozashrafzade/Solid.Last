@@ -25,9 +25,12 @@ namespace SRP
         {
             Balance += amount;
 
+
             Transactions.Add($"Deposited ${amount}.New Blance :${Balance}");
 
         }
 
+
     }
+
 }
