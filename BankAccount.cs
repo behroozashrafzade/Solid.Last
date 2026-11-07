@@ -48,6 +48,8 @@ namespace SRP
             {
                 Console.WriteLine(transaction);
             }
+
+
         }
     }
 
